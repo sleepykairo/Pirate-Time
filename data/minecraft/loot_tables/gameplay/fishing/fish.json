@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "conditions": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "position": {
+                    "x": {
+                      "min": 100,
+                      "max": 200
+                    },
+                    "z": {
+                      "min": 100,
+                      "max": 200
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

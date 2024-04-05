@@ -22,7 +22,7 @@ execute at @e[tag=center] positioned ~-1920 -64 ~-1920 as @a[dx=3839,dy=500,dz=3
 execute at @e[tag=center] positioned ~-1792 -64 ~-1792 as @a[dx=3583,dy=500,dz=3583] positioned ~128 ~ ~128 unless entity @s[dx=3327,dy=500,dz=3327] run scoreboard players set @s storm 1
 execute at @e[tag=center] positioned ~-1664 -64 ~-1664 as @a[dx=3327,dy=500,dz=3327] run scoreboard players set @s storm 0
 
-execute as @e[tag=!newVel,nbt={item:{tag:{cannonball:1}}}] run function pt:cannonball_spawn
-scoreboard players reset @a crossbow
+execute as @e[tag=!newVel,nbt={item:{tag:{cannonball:1}},ShotFromCrossbow:0b}] run function pt:cannonball_spawn
+#scoreboard players reset @a crossbow
 
-execute as @e[type=#arrows,nbt={item:{tag:{cannonball:1}},inGround:1b},tag=newVel] at @s run function pt:cannonball_land
+execute as @e[tag=newVel,nbt={item:{tag:{cannonball:1}},inGround:1b}] at @s run function pt:cannonball_land

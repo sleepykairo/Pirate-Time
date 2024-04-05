@@ -25,6 +25,3 @@ scoreboard objectives add newVelZ dummy
 scoreboard objectives add newX dummy
 scoreboard objectives add newY dummy
 scoreboard objectives add newZ dummy
-
-scoreboard objectives add bow minecraft.used:bow
-scoreboard objectives add crossbow minecraft.used:crossbow
